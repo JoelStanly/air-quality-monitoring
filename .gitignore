@@ -1,0 +1,12 @@
+# logs
+*.log
+*.log.*.gz
+# build output
+target/
+node_modules/
+build/
+test-output/
+# IDE
+.idea/
+.vscode/
+*.iml

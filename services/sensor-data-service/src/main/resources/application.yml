@@ -1,0 +1,17 @@
+logging:
+  file:
+    name: LogInfo.log
+  level:
+    com:
+      awsiot: INFO
+server:
+  port: 9002
+spring:
+  application:
+    name: SENSOR-DATA
+aws:
+  accessKeyId: ${AWS_ACCESS_KEY_ID}
+  secretKeyId: ${AWS_SECRET_ACCESS_KEY}
+  snsEndpoint: arn:aws:sns:ap-south-1:085481312251:SafetySensor
+  dynamoDBEndpoint: dynamodb.ap-south-1.amazonaws.com
+  region: ap-south-1
